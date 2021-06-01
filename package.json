@@ -3,6 +3,7 @@
     "description": "Buttons for DataTables with styling for [Bootstrap5](https://getbootstrap.com/)",
     "main": "js/buttons.bootstrap5.js",
     "style": "css/buttons.bootstrap5.css",
+    "types": "./types/buttons.bootstrap5.d.ts",
     "version": "1.7.0",
     "files": [
         "css/**/*.css",
