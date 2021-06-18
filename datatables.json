@@ -11,5 +11,6 @@
         "types/buttons.bootstrap5.d.ts"
     ],
     "src-repo": "http://github.com/DataTables/Buttons",
-    "last-tag": "1.7.1"
+    "last-tag": "1.7.1",
+    "last-sync": "caa1776a8da8a32b9959969a634f59ccb7bcc7c4"
 }
