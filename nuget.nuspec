@@ -10,8 +10,8 @@
         <license type="expression">MIT</license>
         <tags>Buttons  Column Visibility  csv  excel  pdf  print  Bootstrap  Bootstrap5  Datatables jQuery table</tags>
         <dependencies>
-            <dependency id="datatables.net-buttons" version=">=1.7.0"/>
-            <dependency id="datatables.net-bs5" version=">=1.10.24"/>
+            <dependency id="datatables.net-buttons" version=">=1.7.1"/>
+            <dependency id="datatables.net-bs5" version=">=1.10.26-dev"/>
         </dependencies>
         <contentFiles>
             <files include="**/*" buildAction="Content"/>

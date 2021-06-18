@@ -25,8 +25,8 @@
         "sort"
     ],
     "dependencies": {
-        "datatables.net-buttons": ">=1.7.0",
-        "datatables.net-bs5": ">=1.10.24",
+        "datatables.net-buttons": ">=1.7.1",
+        "datatables.net-bs5": ">=1.10.26-dev",
         "jquery": ">=1.7"
     },
     "moduleType": [
