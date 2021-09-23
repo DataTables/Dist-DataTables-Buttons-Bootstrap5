@@ -228,7 +228,7 @@ div.dt-btn-split-wrapper button.dt-btn-split-drop {
   border-bottom-right-radius: 0.25rem !important;
 }
 
-div.dataTables_wrapper div.dt-buttons.btn-group button.btn:last-of-type:first-of-type {
+div.dataTables_wrapper div.dt-buttons.btn-group button.btn:last-child:first-of-type {
   border-radius: 4px !important;
 }
 div.dataTables_wrapper div.dt-buttons.btn-group div.btn-group button.btn:last-of-type {
