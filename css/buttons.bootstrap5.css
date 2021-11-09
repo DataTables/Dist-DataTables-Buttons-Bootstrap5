@@ -66,6 +66,34 @@ div.dt-button-collection-title:empty {
   display: none;
 }
 
+span.dt-button-spacer {
+  display: inline-block;
+  margin: 0.5em;
+}
+span.dt-button-spacer.bar {
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
+}
+span.dt-button-spacer.bar:empty {
+  height: 1em;
+  width: 1px;
+}
+
+div.dt-button-collection span.dt-button-spacer {
+  width: 100%;
+  font-size: 0.9em;
+  text-align: center;
+  margin: 0.5em 0;
+}
+div.dt-button-collection span.dt-button-spacer:empty {
+  height: 0;
+  width: 100%;
+}
+div.dt-button-collection span.dt-button-spacer.bar {
+  border-right: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
 div.dt-button-collection {
   position: absolute;
   z-index: 2001;
