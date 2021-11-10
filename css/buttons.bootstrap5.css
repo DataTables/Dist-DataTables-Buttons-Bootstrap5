@@ -69,14 +69,17 @@ div.dt-button-collection-title:empty {
 span.dt-button-spacer {
   display: inline-block;
   margin: 0.5em;
+  white-space: nowrap;
 }
 span.dt-button-spacer.bar {
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
   vertical-align: middle;
+  padding-left: 0.5em;
 }
 span.dt-button-spacer.bar:empty {
   height: 1em;
   width: 1px;
+  padding-left: 0;
 }
 
 div.dt-button-collection span.dt-button-spacer {
@@ -90,8 +93,9 @@ div.dt-button-collection span.dt-button-spacer:empty {
   width: 100%;
 }
 div.dt-button-collection span.dt-button-spacer.bar {
-  border-right: none;
+  border-left: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding-left: 0;
 }
 
 div.dt-button-collection {
@@ -271,4 +275,13 @@ div.dataTables_wrapper div.dt-buttons.btn-group div.btn-group:last-child {
   border: 1px solid #6c757d;
   border-top-right-radius: 4px !important;
   border-bottom-right-radius: 4px !important;
+}
+
+span.dt-button-spacer.bar:empty {
+  height: inherit;
+}
+
+div.dt-button-collection span.dt-button-spacer {
+  padding-left: 1rem !important;
+  text-align: left;
 }
