@@ -273,23 +273,54 @@ div.dt-btn-split-wrapper:active:not(.disabled) button:hover, div.dt-btn-split-wr
   border-color: #545b62;
 }
 
-div.dataTables_wrapper div.dt-buttons.btn-group button.btn:last-child:first-of-type {
+div.dataTables_wrapper div.dt-buttons.btn-group div.btn-group {
   border-radius: 4px !important;
 }
-div.dataTables_wrapper div.dt-buttons.btn-group div.btn-group button.btn:last-of-type {
+div.dataTables_wrapper div.dt-buttons.btn-group div.btn-group:last-child {
   border-top-left-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
 }
-div.dataTables_wrapper div.dt-buttons.btn-group div.btn-group button.btn:first-of-type {
+div.dataTables_wrapper div.dt-buttons.btn-group div.btn-group:first-child {
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
 }
-div.dataTables_wrapper div.dt-buttons.btn-group div.btn-group div.dt-btn-split-drop:last-child {
-  border: 1px solid #6c757d;
+div.dataTables_wrapper div.dt-buttons.btn-group div.btn-group:last-child:first-child {
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
   border-top-right-radius: 4px !important;
   border-bottom-right-radius: 4px !important;
 }
+div.dataTables_wrapper div.dt-buttons.btn-group div.btn-group button.dt-btn-split-drop:last-child {
+  border: 1px solid #6c757d;
+}
 div.dataTables_wrapper div.dt-buttons.btn-group div.btn-group div.dt-btn-split-wrapper {
+  border: none;
+}
+
+div.dt-button-collection div.btn-group {
+  border-radius: 4px !important;
+}
+div.dt-button-collection div.btn-group button {
+  border-radius: 4px;
+}
+div.dt-button-collection div.btn-group button:last-child {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+div.dt-button-collection div.btn-group button:first-child {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+div.dt-button-collection div.btn-group button:last-child:first-child {
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+div.dt-button-collection div.btn-group button.dt-btn-split-drop:last-child {
+  border: 1px solid #6c757d;
+}
+div.dt-button-collection div.btn-group div.dt-btn-split-wrapper {
   border: none;
 }
 
