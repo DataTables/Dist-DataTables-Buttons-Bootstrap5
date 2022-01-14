@@ -133,7 +133,9 @@ div.dt-button-collection.fixed {
   top: 50%;
   left: 50%;
   margin-left: -75px;
-  border-radius: 0;
+  border-radius: 5px;
+  max-height: 100vh;
+  overflow: auto;
 }
 div.dt-button-collection.fixed.two-column {
   margin-left: -200px;
@@ -144,7 +146,25 @@ div.dt-button-collection.fixed.three-column {
 div.dt-button-collection.fixed.four-column {
   margin-left: -300px;
 }
-div.dt-button-collection > :last-child {
+div.dt-button-collection.fixed.columns {
+  margin-left: -412px;
+}
+@media screen and (max-width: 1024px) {
+  div.dt-button-collection.fixed.columns {
+    margin-left: -309px;
+  }
+}
+@media screen and (max-width: 640px) {
+  div.dt-button-collection.fixed.columns {
+    margin-left: -205px;
+  }
+}
+@media screen and (max-width: 460px) {
+  div.dt-button-collection.fixed.columns {
+    margin-left: -100px;
+  }
+}
+div.dt-button-collection.two-column > :last-child, div.dt-button-collection.three-column > :last-child, div.dt-button-collection.four-column > :last-child {
   display: block !important;
   -webkit-column-gap: 8px;
   -moz-column-gap: 8px;
@@ -152,7 +172,7 @@ div.dt-button-collection > :last-child {
   -o-column-gap: 8px;
   column-gap: 8px;
 }
-div.dt-button-collection > :last-child > * {
+div.dt-button-collection.two-column > :last-child > *, div.dt-button-collection.three-column > :last-child > *, div.dt-button-collection.four-column > :last-child > * {
   -webkit-column-break-inside: avoid;
   break-inside: avoid;
 }
@@ -161,10 +181,6 @@ div.dt-button-collection.two-column {
 }
 div.dt-button-collection.two-column > :last-child {
   padding-bottom: 1px;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  -ms-column-count: 2;
-  -o-column-count: 2;
   column-count: 2;
 }
 div.dt-button-collection.three-column {
@@ -172,10 +188,6 @@ div.dt-button-collection.three-column {
 }
 div.dt-button-collection.three-column > :last-child {
   padding-bottom: 1px;
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  -ms-column-count: 3;
-  -o-column-count: 3;
   column-count: 3;
 }
 div.dt-button-collection.four-column {
@@ -183,14 +195,39 @@ div.dt-button-collection.four-column {
 }
 div.dt-button-collection.four-column > :last-child {
   padding-bottom: 1px;
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
-  -ms-column-count: 4;
-  -o-column-count: 4;
   column-count: 4;
 }
 div.dt-button-collection .dt-button {
   border-radius: 0;
+}
+div.dt-button-collection.columns {
+  width: auto;
+}
+div.dt-button-collection.columns > :last-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 818px;
+  padding-bottom: 1px;
+}
+div.dt-button-collection.columns > :last-child .dt-button {
+  width: 200px;
+}
+@media screen and (max-width: 1024px) {
+  div.dt-button-collection.columns > :last-child {
+    width: 614px;
+  }
+}
+@media screen and (max-width: 640px) {
+  div.dt-button-collection.columns > :last-child {
+    width: 410px;
+  }
+}
+@media screen and (max-width: 460px) {
+  div.dt-button-collection.columns > :last-child {
+    width: 200px;
+  }
 }
 div.dt-button-collection.fixed {
   max-width: none;
