@@ -208,7 +208,7 @@ div.dt-button-collection.columns > :last-child {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  width: 818px;
+  width: 819px;
   padding-bottom: 1px;
 }
 div.dt-button-collection.columns > :last-child .dt-button {
@@ -216,7 +216,7 @@ div.dt-button-collection.columns > :last-child .dt-button {
 }
 @media screen and (max-width: 1024px) {
   div.dt-button-collection.columns > :last-child {
-    width: 614px;
+    width: 615px;
   }
 }
 @media screen and (max-width: 640px) {
