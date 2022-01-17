@@ -161,7 +161,7 @@ div.dt-button-collection.fixed.columns {
 }
 @media screen and (max-width: 460px) {
   div.dt-button-collection.fixed.columns {
-    margin-left: -100px;
+    margin-left: -102px;
   }
 }
 div.dt-button-collection.two-column > :last-child, div.dt-button-collection.three-column > :last-child, div.dt-button-collection.four-column > :last-child {
@@ -212,7 +212,20 @@ div.dt-button-collection.columns > :last-child {
   padding-bottom: 1px;
 }
 div.dt-button-collection.columns > :last-child .dt-button {
-  width: 200px;
+  min-width: 200px;
+  flex: 0 1;
+}
+div.dt-button-collection.columns.dtb-b3 > :last-child, div.dt-button-collection.columns.dtb-b2 > :last-child, div.dt-button-collection.columns.dtb-b1 > :last-child {
+  justify-content: space-between;
+}
+div.dt-button-collection.columns.dtb-b3 .dt-button {
+  flex: 1 1 32%;
+}
+div.dt-button-collection.columns.dtb-b2 .dt-button {
+  flex: 1 1 48%;
+}
+div.dt-button-collection.columns.dtb-b1 .dt-button {
+  flex: 1 1 100%;
 }
 @media screen and (max-width: 1024px) {
   div.dt-button-collection.columns > :last-child {
@@ -223,10 +236,13 @@ div.dt-button-collection.columns > :last-child .dt-button {
   div.dt-button-collection.columns > :last-child {
     width: 410px;
   }
+  div.dt-button-collection.columns.dtb-b3 .dt-button {
+    flex: 0 1 32%;
+  }
 }
 @media screen and (max-width: 460px) {
   div.dt-button-collection.columns > :last-child {
-    width: 200px;
+    width: 205px;
   }
 }
 div.dt-button-collection.fixed {
