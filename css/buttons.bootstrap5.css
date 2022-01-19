@@ -124,18 +124,13 @@ div.dt-button-collection div.dropdown-menu {
   padding-left: 2px;
   padding-right: 2px;
 }
-div.dt-button-collection div.dt-button-collection-title {
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-}
 div.dt-button-collection.fixed {
   position: fixed;
   top: 50%;
   left: 50%;
   margin-left: -75px;
   border-radius: 5px;
-  max-height: 100vh;
-  overflow: auto;
+  background-color: white;
 }
 div.dt-button-collection.fixed.two-column {
   margin-left: -200px;
@@ -147,22 +142,26 @@ div.dt-button-collection.fixed.four-column {
   margin-left: -300px;
 }
 div.dt-button-collection.fixed.columns {
-  margin-left: -412px;
+  margin-left: -409px;
 }
 @media screen and (max-width: 1024px) {
   div.dt-button-collection.fixed.columns {
-    margin-left: -309px;
+    margin-left: -308px;
   }
 }
 @media screen and (max-width: 640px) {
   div.dt-button-collection.fixed.columns {
-    margin-left: -205px;
+    margin-left: -203px;
   }
 }
 @media screen and (max-width: 460px) {
   div.dt-button-collection.fixed.columns {
-    margin-left: -102px;
+    margin-left: -100px;
   }
+}
+div.dt-button-collection.fixed > :last-child {
+  max-height: 100vh;
+  overflow: auto;
 }
 div.dt-button-collection.two-column > :last-child, div.dt-button-collection.three-column > :last-child, div.dt-button-collection.four-column > :last-child {
   display: block !important;
@@ -208,12 +207,14 @@ div.dt-button-collection.columns > :last-child {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  width: 819px;
+  gap: 6px;
+  width: 818px;
   padding-bottom: 1px;
 }
 div.dt-button-collection.columns > :last-child .dt-button {
   min-width: 200px;
   flex: 0 1;
+  margin: 0;
 }
 div.dt-button-collection.columns.dtb-b3 > :last-child, div.dt-button-collection.columns.dtb-b2 > :last-child, div.dt-button-collection.columns.dtb-b1 > :last-child {
   justify-content: space-between;
@@ -229,12 +230,12 @@ div.dt-button-collection.columns.dtb-b1 .dt-button {
 }
 @media screen and (max-width: 1024px) {
   div.dt-button-collection.columns > :last-child {
-    width: 615px;
+    width: 612px;
   }
 }
 @media screen and (max-width: 640px) {
   div.dt-button-collection.columns > :last-child {
-    width: 410px;
+    width: 406px;
   }
   div.dt-button-collection.columns.dtb-b3 .dt-button {
     flex: 0 1 32%;
@@ -242,11 +243,24 @@ div.dt-button-collection.columns.dtb-b1 .dt-button {
 }
 @media screen and (max-width: 460px) {
   div.dt-button-collection.columns > :last-child {
-    width: 205px;
+    width: 200px;
   }
 }
 div.dt-button-collection.fixed {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  padding: 0.5rem 0;
   max-width: none;
+}
+div.dt-button-collection.fixed .dropdown-menu {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
 }
 div.dt-button-collection.fixed:before, div.dt-button-collection.fixed:after {
   display: none;
