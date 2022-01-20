@@ -131,6 +131,7 @@ div.dt-button-collection {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   padding: 0.5rem 0;
   max-width: none;
+  min-width: 200px;
 }
 div.dt-button-collection div.dropdown-menu {
   position: relative;
@@ -268,6 +269,9 @@ div.dt-button-collection.columns.dtb-b1 .dt-button {
 }
 div.dt-button-collection.fixed:before, div.dt-button-collection.fixed:after {
   display: none;
+}
+div.dt-button-collection .dt-button {
+  min-width: 200px;
 }
 div.dt-button-collection div.dt-btn-split-wrapper {
   width: 100%;
