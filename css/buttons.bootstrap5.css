@@ -27,6 +27,10 @@
     transform: rotate(360deg);
   }
 }
+div.dataTables_wrapper {
+  position: relative;
+}
+
 div.dt-button-info {
   position: fixed;
   top: 50%;
