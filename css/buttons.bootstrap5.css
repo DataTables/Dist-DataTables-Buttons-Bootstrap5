@@ -272,7 +272,7 @@ div.dt-button-collection.fixed:before, div.dt-button-collection.fixed:after {
 div.dt-button-collection .btn-group {
   flex: 1 1 auto;
 }
-div.dt-button-collection .dt-button {
+div.dt-button-collection .dt-button:not(.dt-btn-split-drop) {
   min-width: 200px;
 }
 div.dt-button-collection div.dt-btn-split-wrapper {
