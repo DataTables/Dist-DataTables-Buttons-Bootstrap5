@@ -12,13 +12,13 @@
     ],
     "keywords": [
         "Buttons",
-        "Column Visibility",
-        "csv",
-        "excel",
-        "pdf",
-        "print",
+ "Column Visibility",
+ "csv",
+ "excel",
+ "pdf",
+ "print",
         "Bootstrap",
-        "Bootstrap5",
+ "Bootstrap5",
         "Datatables",
         "jQuery",
         "table",
@@ -26,8 +26,8 @@
         "sort"
     ],
     "dependencies": {
-        "datatables.net-buttons": ">=2.0.1",
-        "datatables.net-bs5": ">=1.11.3",
+        "datatables.net-buttons": ">=2.2.2",
+        "datatables.net-bs5": ">=1.11.5",
         "jquery": ">=1.7"
     },
     "moduleType": [
