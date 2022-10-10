@@ -1,7 +1,9 @@
 {
     "js": [
         "js/buttons.bootstrap5.js",
-        "js/buttons.bootstrap5.min.js"
+        "js/buttons.bootstrap5.min.js",
+        "js/buttons.bootstrap5.min.mjs",
+        "js/buttons.bootstrap5.mjs"
     ],
     "css": [
         "css/buttons.bootstrap5.css",
@@ -11,6 +13,5 @@
         "types/buttons.bootstrap5.d.ts"
     ],
     "src-repo": "http://github.com/DataTables/Buttons",
-    "last-tag": "2.2.2",
-    "last-sync": "7ec8b48bfc3b566498528975a137a134b3b1f559"
+    "last-tag": "2.2.3"
 }

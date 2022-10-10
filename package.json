@@ -2,12 +2,14 @@
     "name": "datatables.net-buttons-bs5",
     "description": "Buttons for DataTables with styling for [Bootstrap5](https://getbootstrap.com/)",
     "main": "js/buttons.bootstrap5.js",
+    "module": "js/buttons.bootstrap5.mjs",
     "style": "css/buttons.bootstrap5.css",
     "types": "./types/buttons.bootstrap5.d.ts",
     "version": "2.2.3",
     "files": [
         "css/**/*.css",
         "js/**/*.js",
+        "js/**/*.mjs",
         "types/**/*.d.ts"
     ],
     "keywords": [
