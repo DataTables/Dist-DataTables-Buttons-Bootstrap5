@@ -10,7 +10,8 @@
         "css/buttons.bootstrap5.min.css"
     ],
     "types": [
-        "types/buttons.bootstrap5.d.ts"
+        "types/buttons.bootstrap5.d.ts",
+        "types/types.d.ts"
     ],
     "src-repo": "http://github.com/DataTables/Buttons",
     "last-tag": "2.2.3"
