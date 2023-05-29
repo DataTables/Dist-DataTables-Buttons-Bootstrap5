@@ -2,9 +2,12 @@
  * ©2016 SpryMedia Ltd - datatables.net/license
  */
 
-import $ from 'jquery';
+import jQuery from 'jquery';
 import DataTable from 'datatables.net-bs5';
 import Buttons from 'datatables.net-buttons';
+
+// Allow reassignment of the $ variable
+let $ = jQuery;
 
 
 $.extend( true, DataTable.Buttons.defaults, {
