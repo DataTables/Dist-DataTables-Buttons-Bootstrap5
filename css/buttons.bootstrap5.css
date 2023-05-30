@@ -128,6 +128,7 @@ div.dt-button-collection span.dt-button-spacer.bar {
 
 div.dt-button-collection {
   position: absolute;
+  margin-top: 3px;
   z-index: 2001;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -146,6 +147,36 @@ div.dt-button-collection div.dropdown-menu {
   border-radius: 0;
   z-index: 2002;
   min-width: 100%;
+}
+div.dt-button-collection div.dropdown-menu div.dt-button-split {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: stretch;
+}
+div.dt-button-collection div.dropdown-menu div.dt-button-split a:first-child {
+  margin: 0;
+  display: inline-block;
+  width: 0;
+  min-width: auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 50px;
+}
+div.dt-button-collection div.dropdown-menu div.dt-button-split button:last-child {
+  min-width: 33px;
+  flex: 0;
+  background: transparent;
+  border: none;
+  line-height: 1rem;
+  color: var(--bs-dropdown-link-color);
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+}
+div.dt-button-collection div.dropdown-menu div.dt-button-split button:last-child:hover {
+  color: var(--bs-dropdown-link-hover-color);
+  background-color: var(--bs-dropdown-link-hover-bg);
 }
 div.dt-button-collection.fixed {
   position: fixed;
@@ -279,28 +310,6 @@ div.dt-button-collection .btn-group {
 div.dt-button-collection .dt-button:not(.dt-btn-split-drop) {
   min-width: 200px;
 }
-div.dt-button-collection div.dt-btn-split-wrapper {
-  width: 100%;
-}
-div.dt-button-collection button.dt-btn-split-drop-button {
-  width: 100%;
-  color: #212529;
-  border: none;
-  background-color: white;
-  border-radius: 0px;
-  margin-left: 0px !important;
-}
-div.dt-button-collection button.dt-btn-split-drop-button:focus {
-  border: none;
-  border-radius: 0px;
-  outline: none;
-}
-div.dt-button-collection button.dt-btn-split-drop-button:hover {
-  background-color: #e9ecef;
-}
-div.dt-button-collection button.dt-btn-split-drop-button:active {
-  background-color: #007bff !important;
-}
 
 div.dt-button-background {
   position: fixed;
@@ -352,23 +361,8 @@ div.dt-buttons a.btn.processing:after {
 div.dt-buttons div.btn-group {
   position: initial;
 }
-
-div.dt-btn-split-wrapper button.dt-btn-split-drop {
-  border-top-right-radius: 0.25rem !important;
-  border-bottom-right-radius: 0.25rem !important;
-}
-div.dt-btn-split-wrapper:active:not(.disabled) button, div.dt-btn-split-wrapper.active:not(.disabled) button {
-  background-color: #5a6268;
-  border-color: #545b62;
-}
-div.dt-btn-split-wrapper:active:not(.disabled) button.dt-btn-split-drop, div.dt-btn-split-wrapper.active:not(.disabled) button.dt-btn-split-drop {
-  box-shadow: none;
-  background-color: #6c757d;
-  border-color: #6c757d;
-}
-div.dt-btn-split-wrapper:active:not(.disabled) button:hover, div.dt-btn-split-wrapper.active:not(.disabled) button:hover {
-  background-color: #5a6268;
-  border-color: #545b62;
+div.dt-buttons span.dt-button-down-arrow {
+  display: none;
 }
 
 div.dataTables_wrapper div.dt-buttons.btn-group div.btn-group {
@@ -387,12 +381,6 @@ div.dataTables_wrapper div.dt-buttons.btn-group div.btn-group:last-child:first-c
   border-bottom-left-radius: 4px !important;
   border-top-right-radius: 4px !important;
   border-bottom-right-radius: 4px !important;
-}
-div.dataTables_wrapper div.dt-buttons.btn-group div.btn-group button.dt-btn-split-drop:last-child {
-  border: 1px solid #6c757d;
-}
-div.dataTables_wrapper div.dt-buttons.btn-group div.btn-group div.dt-btn-split-wrapper {
-  border: none;
 }
 
 div.dt-button-collection div.btn-group {
@@ -415,12 +403,6 @@ div.dt-button-collection div.btn-group button:last-child:first-child {
   border-top-right-radius: 4px !important;
   border-bottom-right-radius: 4px !important;
 }
-div.dt-button-collection div.btn-group button.dt-btn-split-drop:last-child {
-  border: 1px solid #6c757d;
-}
-div.dt-button-collection div.btn-group div.dt-btn-split-wrapper {
-  border: none;
-}
 
 span.dt-button-spacer.bar:empty {
   height: inherit;
@@ -429,4 +411,9 @@ span.dt-button-spacer.bar:empty {
 div.dt-button-collection span.dt-button-spacer {
   padding-left: 1rem !important;
   text-align: left;
+}
+
+html.dark div.dt-button-collection {
+  background-color: #212529;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
