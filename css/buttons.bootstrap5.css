@@ -162,6 +162,9 @@ div.dt-buttons div.dropdown-menu div.dt-button-split button:last-child:after {
   position: relative;
   left: -3px;
 }
+div.dt-buttons span.dt-button-spacer.empty {
+  margin: 1px;
+}
 div.dt-buttons span.dt-button-spacer.bar:empty {
   height: inherit;
 }
