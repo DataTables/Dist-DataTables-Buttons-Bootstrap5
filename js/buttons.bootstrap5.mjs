@@ -16,7 +16,8 @@ $.extend( true, DataTable.Buttons.defaults, {
 			className: 'dt-buttons btn-group flex-wrap'
 		},
 		button: {
-			className: 'btn btn-secondary'
+			className: 'btn btn-secondary',
+			active: 'active'
 		},
 		collection: {
 			action: {
@@ -24,13 +25,13 @@ $.extend( true, DataTable.Buttons.defaults, {
 			},
 			container: {
 				tag: 'div',
-				className: 'dropdown-menu'
+				className: 'dropdown-menu dt-button-collection'
 			},
 			closeButton: false,
 			button: {
 				tag: 'a',
 				className: 'dt-button dropdown-item',
-				active: 'active',
+				active: 'dt-button-active',
 				disabled: 'disabled',
 				spacer: {
 					className: 'dropdown-divider',
