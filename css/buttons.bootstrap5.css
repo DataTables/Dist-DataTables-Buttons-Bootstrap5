@@ -173,6 +173,9 @@ div.dt-buttons div.btn-group {
 div.dt-buttons div.dropdown-menu {
   margin-top: 4px;
 }
+div.dt-buttons div.dropdown-menu .dt-button {
+  position: relative;
+}
 div.dt-buttons div.dropdown-menu div.dt-button-split {
   display: flex;
   flex-direction: row;
