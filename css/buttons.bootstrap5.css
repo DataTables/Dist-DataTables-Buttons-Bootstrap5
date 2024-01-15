@@ -37,6 +37,7 @@ div.dt-buttons {
 div.dt-buttons .dt-button {
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 div.dt-button-info {
@@ -80,10 +81,13 @@ button.dtb-hide-drop {
 
 div.dt-button-collection-title {
   text-align: center;
-  padding: 0.3em 0 0.5em;
+  padding: 0.3em 0.5em 0.5em;
   margin-left: 0.5em;
   margin-right: 0.5em;
   font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 div.dt-button-collection-title:empty {
@@ -172,6 +176,7 @@ div.dt-buttons div.btn-group {
 }
 div.dt-buttons div.dropdown-menu {
   margin-top: 4px;
+  width: 200px;
 }
 div.dt-buttons div.dropdown-menu .dt-button {
   position: relative;
@@ -197,6 +202,7 @@ div.dt-buttons div.dropdown-menu div.dt-button-split button:last-child {
   line-height: 1rem;
   color: var(--bs-dropdown-link-color);
   padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  overflow: visible;
 }
 div.dt-buttons div.dropdown-menu div.dt-button-split button:last-child:hover {
   color: var(--bs-dropdown-link-hover-color);
