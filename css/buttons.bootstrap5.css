@@ -166,6 +166,11 @@ div.dt-button-collection span.dt-button-spacer.bar {
   padding-left: 0;
 }
 
+@media print {
+  table.dataTable tr > * {
+    box-shadow: none !important;
+  }
+}
 html.dark div.dt-button-info {
   background-color: var(--dt-html-background);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -355,7 +360,7 @@ div.dt-buttons .btn.processing:after {
   box-sizing: border-box;
   display: block;
   content: " ";
-  border: 2px solid #282828;
+  border: 2px solid rgb(40, 40, 40);
   border-radius: 50%;
   border-left-color: transparent;
   border-right-color: transparent;
@@ -387,7 +392,7 @@ div.dt-button-background {
   }
 }
 :root[data-bs-theme=dark] div.dropdown-menu.dt-button-collection.fixed {
-  background-color: #212529;
+  background-color: rgb(33, 37, 41);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 8px;
 }
