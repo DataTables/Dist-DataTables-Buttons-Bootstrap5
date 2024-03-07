@@ -13,6 +13,6 @@
         "types/buttons.bootstrap5.d.ts"
     ],
     "src-repo": "http://github.com/DataTables/Buttons",
-    "last-tag": "3.0.0",
+    "last-tag": "3.0.1",
     "last-sync": "7343b58dbfde91a552b9fe9ef1817b961e521038"
 }
