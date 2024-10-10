@@ -186,6 +186,11 @@ div.dt-buttons div.dropdown-menu {
 div.dt-buttons div.dropdown-menu .dt-button {
   position: relative;
 }
+div.dt-buttons div.dropdown-menu .dt-button.dropdown-toggle::after {
+  position: absolute;
+  right: 12px;
+  top: 14px;
+}
 div.dt-buttons div.dropdown-menu div.dt-button-split {
   display: flex;
   flex-direction: row;
@@ -212,10 +217,6 @@ div.dt-buttons div.dropdown-menu div.dt-button-split button:last-child {
 div.dt-buttons div.dropdown-menu div.dt-button-split button:last-child:hover {
   color: var(--bs-dropdown-link-hover-color);
   background-color: var(--bs-dropdown-link-hover-bg);
-}
-div.dt-buttons div.dropdown-menu div.dt-button-split button:last-child:after {
-  position: relative;
-  left: -3px;
 }
 div.dt-buttons div.dropdown-menu.fixed {
   position: fixed;
