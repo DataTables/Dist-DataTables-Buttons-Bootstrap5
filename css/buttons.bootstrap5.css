@@ -171,11 +171,6 @@ div.dt-button-collection span.dt-button-spacer.bar {
     box-shadow: none !important;
   }
 }
-html.dark div.dt-button-info {
-  background-color: var(--dt-html-background);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-}
-
 div.dt-buttons div.btn-group {
   position: initial;
 }
@@ -388,8 +383,12 @@ div.dt-button-background {
     float: none;
   }
 }
+div.dt-button-info {
+  background-color: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color-translucent);
+}
+
 :root[data-bs-theme=dark] div.dropdown-menu.dt-button-collection.fixed {
-  background-color: rgb(33, 37, 41);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
+  background-color: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color-translucent);
 }
