@@ -27,7 +27,7 @@ import DataTable from 'datatables.net-bs5';
 import 'datatables.net-buttons-bs5'
 
 new DataTable('#myTable', {
-    // initalisation options
+    // initialisation options
 });
 ```
 
