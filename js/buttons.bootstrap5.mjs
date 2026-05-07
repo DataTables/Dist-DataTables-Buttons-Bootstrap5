@@ -1,16 +1,15 @@
-/*! Bootstrap integration for DataTables' Buttons
- * © SpryMedia Ltd - datatables.net/license
+/*! Buttons Bootstrap 5 styling 4.0.0-beta.1 for DataTables
+ * Copyright (c) SpryMedia Ltd - datatables.net/license
  */
 
-import jQuery from 'jquery';
 import DataTable from 'datatables.net-bs5';
 import Buttons from 'datatables.net-buttons';
 
-// Allow reassignment of the $ variable
-let $ = jQuery;
 
+var Dom = DataTable.Dom;
+var util = DataTable.util;
 
-$.extend(true, DataTable.Buttons.defaults, {
+util.object.assignDeep(DataTable.Buttons.defaults, {
 	dom: {
 		container: {
 			className: 'dt-buttons btn-group flex-wrap'
@@ -69,7 +68,7 @@ $.extend(true, DataTable.Buttons.defaults, {
 	},
 	buttonCreated: function (config, button, inCollection) {
 		return config.buttons && ! inCollection
-			? $('<div class="btn-group"/>').append(button)
+			? Dom.c('div').classAdd('btn-group a').append(button)
 			: button;
 	}
 });
@@ -78,3 +77,4 @@ DataTable.ext.buttons.collection.rightAlignClassName = 'dropdown-menu-right';
 
 
 export default DataTable;
+
